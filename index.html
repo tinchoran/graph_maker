@@ -13,15 +13,15 @@
     <main class="main-container">
         <h1 class="main-title">Graficador Web</h1>
         <section class="form__container container">
-            <h2>Indique las características del gráfico</h2>
+            <h2 class="form__title">Indique las características del gráfico</h2>
             <form action="" class="formulario">
                 <div class="form__features">
                     <label for="graph_name" class="input__label">Nombre</label>
-                    <input type="text" name="graph_name" id="" class="form__input">
+                    <input type="text" name="graph_name" id="" class="form__input" required>
                 </div>
                 <div class="form__features">
-                    <label for="cant_cols" class="input__label">Cantidad de columnas</label>
-                    <input type="number" name="cant_cols" id="" class="form__input">
+                    <label for="cant_cols" class="input__label" id="">Cantidad de columnas</label>
+                    <input type="number" name="cant_cols" class="form__input" required>
                 </div>
                 <button type="submit" class="form__btn">Aceptar<span class="btn_before"></span></button>
                 

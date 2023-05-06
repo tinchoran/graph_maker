@@ -117,10 +117,6 @@ body{
     box-shadow: 1px 1px 5px rgb(157, 153, 153);
 }
 
-.form__input:invalid{
-    background-color: rebeccapurple;
-}
-
 
 .input__label{
     font-size: var(--font-xsmall);
@@ -176,4 +172,15 @@ body{
 .input-container{
     display: flex;
     gap: 1rem;
+}
+
+
+
+/*Animations*/
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
 }
