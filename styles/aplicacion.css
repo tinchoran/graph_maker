@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    /*Font-sizes*/
+    --font-display: 4.2rem;
+    --font-jumbo: 3.6rem;
+    --font-xlarge: 3.2rem;
+    --font-large: 2.8rem;
+    --font-medium: 2.2rem;
+    --font-small: 1.8rem;
+    --font-xsmall: 1.6rem;
+    --font-thin: 1.2rem;
+
+    /*Font-styles*/
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /*Backgrounds*/
+    --dark-bg: #222020;
+
+    /*Font-colors*/
+    --light-font: #dbf3ec;
+    --green-font: #0abe82;
+
+    /*Spacings*/
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+
+/*MAIN-CONTAINER*/
+.aplicacion-container{
+    padding: var(--spacing-24) 0;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    align-items: center;
+}
+
+.graph{
+    height: 500px;
+    width: 80%;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: var(--spacing-16) var(--spacing-36);
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.item{
+    width: 20%;
+    position: relative;
+    background-color: white;
+    animation: crecimiento .5s ease-out;
+}
+
+.item__name{
+    position: absolute;
+    top: -2rem;
+    font-size: var(--font-small);
+    color: var(--light-font);
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+/*Animations*/
+@keyframes crecimiento {
+    from{
+        clip-path: inset(100% 0 0 0);
+    } to{
+        clip-path: inset(0 0 0 0);
+    }
+}
