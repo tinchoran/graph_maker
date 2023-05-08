@@ -27,8 +27,8 @@
     --dark-bg: #222020;
 
     /*Font-colors*/
-    --light-font: #dbf3ec;
-    --green-font: #0abe82;
+    --light-font: #ddf4ed;
+    --green-font: #0abd81;
 
     /*Spacings*/
     --spacing-128: 12.8rem;
@@ -48,6 +48,10 @@ html{
 
 }
 
+img{
+    width: 100%;
+}
+
 body{
     background-color: var(--dark-bg);
 }
@@ -56,6 +60,34 @@ body{
     max-width: 90%;
     margin: 0 auto;
 }
+
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(158, 157, 157);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: 0 0;
+}
+
 
 /*MAIN-CONTAINER*/
 .main-container{
@@ -75,6 +107,71 @@ body{
     text-transform: uppercase;
     font-weight: 700;
     color: var(--green-font);
+}
+
+
+/*Display Menu*/
+.display-menu{
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    padding: .4rem .4rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: var(--green-font);
+    transition: .2s linear;
+    border:1px solid transparent;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.display-menu:hover{
+    box-shadow: 1px 1px 5px black;
+    background: none;
+    border-color: var(--green-font);
+}
+
+.display-menu .btn_before{
+    transition: .2s linear;
+}
+.display-menu:hover .btn_before{
+    width: 100%;
+    transform: translateX(100%);
+}
+
+.common-graphs{
+    display: none;
+    width: 30rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-right: 1px solid var(--green-font);
+    box-shadow: 1px 1px 5px var(--green-font);
+    padding: var(--spacing-28) var(--spacing-16);
+    flex-direction: column;
+    gap: 4rem;
+    
+}
+
+.grilla{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.common-graphs__title{
+    color: var(--light-font);
+    font-size: var(--font-medium);
+    text-align: right;
 }
 
 /*form*/
@@ -184,3 +281,4 @@ body{
     75% { transform: translateX(5px); }
     100% { transform: translateX(0); }
 }
+

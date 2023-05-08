@@ -1,0 +1,42 @@
+[
+    {
+        "name": "popularNames",
+        "title": "Nombres más populares del mundo",
+        "valores": ["Muhammad",150000000,"Aisha",60000000,"Fatima",43000000,
+        "Ali",25000000,"Noah",17324124,"Oliver",13670725,"Emma",11805260,"Ava",11205260,"Sophia",10685450,
+        "Isabella",10000000]
+    },
+    {
+        "name": "paisesPobres",
+        "title": "Los 10 países más pobres de Latinoamérica",
+        "valores": [  "Haití",  59,  "Nicaragua",  30,  "Honduras",  20,  "Guatemala",  9,  "El Salvador",  8,  "Bolivia",  7,  "Perú",  7,  "Paraguay",  6,  "Colombia",  6,  "República Dominicana",  5]
+        
+    },
+    {
+        "name": "marcasAuto",
+        "title": "Las 5 marcas de coches más vendidas en 2021",
+        "valores": [  "Toyota",  10000000,  "Volkswagen",  6900000,  "Hyundai",  4550000,  "Ford",  4250000,  "Honda",  4200000]
+
+    },
+    {
+      "name": "juegosMasJugados",
+      "title": "Los 5 juegos con más descargas en el mundo",
+      "valores": [  "Subway Surfers",  2000000000,  "PUBG Mobile",  1664000000,  "Candy Crush Saga",  1660000000,  "Clash of Clans",  1320000000,  "Free Fire",  1110000000]
+    },
+    {
+      "name": "maximosGanadoresDelBdor",
+      "title": "Los 5 máximos ganadores del Balón de Oro en la historia",
+      "valores":["Lionel Messi",  7,  "Cristiano Ronaldo",  5,  "Michel Platini",  3,  "Johan Cruyff",  3,  "Marco van Basten",  3]
+    },
+    {
+      "name": "masSeguidosInstagram",
+      "title": "Las 5 personas con mas seguidores en Instagram",
+      "valores": ["Cristiano Ronaldo",580000000, "Lionel Messi", 459000000, "Selena Gomez", 414000000, "Kylie Jenner", 389000000, "Dwayne Johnson", 377000000]
+    }
+]
+    
+
+
+
+  
+  

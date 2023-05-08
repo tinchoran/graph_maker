@@ -20,7 +20,7 @@ for(let i = 0; i<localStorage.length; i++){
     if(localStorage.getItem(`col${i}`)){
         let el = localStorage.getItem(`col${i}`)
         $canvas.insertAdjacentHTML("beforeend",
-        `<article class="item" style="height:${(localStorage.getItem(`colValue${i}`) * 100 / total).toFixed(1)}%;background-color:${colores[i]}">
+        `<article class="item" style="height:${(localStorage.getItem(`colValue${i}`) * 100 / total).toFixed(1)}%;background-color:${colores[i]};">
             <p class="item__name">${el}</p>
             <p class="item__value">${localStorage.getItem(`colValue${i}`).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p>
         </article>`
