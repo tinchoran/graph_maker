@@ -1,7 +1,8 @@
 const $canvas = document.querySelector(".graph")
 const $btn_remake = document.getElementById("btn_remake")
 const $title = document.querySelector(".main-title")
-const colores = ["red", "yellow", "blue", "orange", "white", "green", "aqua", "beige", "pink", "black"]
+const $info = document.querySelector(".info")
+const colores = ["red", "yellow", "blue", "orange", "white", "green", "aqua", "rebeccapurple", "pink", "black"]
 
 
 //Calcular total de los valores ingresados
@@ -25,6 +26,7 @@ for(let i = 0; i<localStorage.length; i++){
             <p class="item__value">${localStorage.getItem(`colValue${i}`).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p>
         </article>`
         )
+        $info.insertAdjacentHTML("beforeend", `<li class="info__item" style="color:${colores[i]};">${localStorage.getItem(`colValue${i}`).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</li>`)
     }
 }
 

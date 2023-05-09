@@ -74,8 +74,8 @@
 
 .item__name{
     position: absolute;
-    top: -2rem;
-    font-size: var(--font-small);
+    top: -4rem;
+    font-size:var(--font-xsmall);
     color: var(--light-font);
     width: 100%;
     text-align: center;
@@ -86,12 +86,38 @@
 .item__value{
     position: absolute;
     bottom: -1.8rem;
-    font-size: var(--font-xsmall);
+    font-size: var(--font-thin);
     color: var(--light-font);
     width: 100%;
     text-align: center;
     text-transform: capitalize;
 }
+
+
+
+/*INFO-CONTAINER*/
+.info-container{
+    position: absolute;
+    right: 0;
+    top: 15rem;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    font-size: var(--font-small);
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    grid-template-columns: 1;
+    row-gap: 1rem;
+}
+
+
+
+
 
 /*Animations*/
 @keyframes crecimiento {
